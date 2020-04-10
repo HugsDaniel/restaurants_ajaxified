@@ -5,6 +5,8 @@ Rails.application.routes.draw do
     resources :reviews, only: :create
   end
 
+  resources :reviews, only: :destroy
+
   # namespace :owner do
   #   resources :reviews, only: :create
   # end
